@@ -226,7 +226,7 @@ export default function Home() {
 
   const addDrama = (drama: Omit<Drama, 'id'>) => {
     const newDrama = {...drama, id: Math.random().toString()};
-    const updatedDramas = [...dramas, newDrama];
+    const updatedDramas = [newDrama, ...dramas];
     setDramas(updatedDramas);
     // Update filtered dramas as well when adding a new drama
     applyFilters(updatedDramas, searchQuery, selectedLanguage, selectedYear, isFavorite);
@@ -236,20 +236,6 @@ export default function Home() {
     });
     setOpen(false);
   };
-
-  // const editDrama = (updatedDrama: Drama) => {
-  //   const updatedDramas = dramas.map(drama => 
-  //     drama.id === updatedDrama.id ? updatedDrama : drama
-  //   );
-  //   setDramas(updatedDramas);
-  //   // Update filtered dramas as well when editing a drama
-  //   applyFilters(updatedDramas, searchQuery, selectedLanguage, selectedYear, isFavorite);
-  //   toast({
-  //     title: 'Drama edited!',
-  //     description: `Successfully edited ${updatedDrama.title} in your list.`,
-  //   });
-  //   setOpen(false);
-  // };
 
   const handleEdit = (drama: Drama) => {
     setCurrentDrama(drama);
@@ -286,60 +272,7 @@ export default function Home() {
       title: 'Drama deleted!',
       description: `Successfully deleted from your list.`,
     });
-  };
-
-  // const handleEdit = (drama: Drama) => {
-  //   setCurrentDrama(drama);
-  //   setEditOpen(true);
-  // };
-
-
-  // const editDrama = (updatedDrama: Drama) => {
-  //   const handleEditSubmit = (updatedDramaData: Omit<Drama, 'id'>) => {
-  //     if (!currentDrama) return;
-      
-  //     const updatedDrama = { ...updatedDramaData, id: currentDrama.id };
-  //     const updatedDramas = dramas.map(drama => 
-  //       drama.id === updatedDrama.id ? updatedDrama : drama
-  //     );
-      
-  //     setDramas(updatedDramas);
-  //     // Update filtered dramas as well when editing a drama
-  //     applyFilters(updatedDramas, searchQuery, selectedLanguage, selectedYear, isFavorite);
-      
-  //     toast({
-  //       title: 'Drama edited!',
-  //       description: `Successfully edited ${updatedDrama.title} in your list.`,
-  //     });
-      
-  //     setEditOpen(false);
-  //     setCurrentDrama(null);
-  //   };
-  // }
-
-  // const editDrama = (updatedDrama: Omit<Drama, 'id'>) => {
-  //   if (!currentDrama) return;
-    
-  //   const updatedDrama = { ...updatedDrama, id: currentDrama.id };
-  //   const updatedDramas = dramas.map(drama => 
-  //     drama.id === updatedDrama.id ? updatedDrama : drama
-  //   );
-    
-  //   setDramas(updatedDramas);
-  //   // Update filtered dramas as well when editing a drama
-  //   applyFilters(updatedDramas, searchQuery, selectedLanguage, selectedYear, isFavorite);
-    
-  //   toast({
-  //     title: 'Drama edited!',
-  //     description: `Successfully edited ${updatedDrama.title} in your list.`,
-  //   });
-    
-  //   setEditOpen(false);
-  //   setCurrentDrama(null);
-  // };
-  
-
-  
+  };  
 
   // Function to apply all filters
   const applyFilters = (
