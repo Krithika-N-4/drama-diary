@@ -24,7 +24,7 @@ Live Demo: [Visit on Vercel](https://drama-diary.vercel.app/)
   - Drama title
   - Language
   - Year
-  - Favorite (type `❤`)
+  - Favorite (type `❤️`)
 - Combine filters (e.g., favorites from 2023 in Korean)
 
 ### 🌗 Light/Dark Mode
@@ -79,15 +79,21 @@ npm run dev
 
 - lucide-react
 
+---
+
 ## 📦 Deployment
 
 The app is live and deployed using Vercel:
 🌐 https://drama-diary.vercel.app/
 
+---
+
 ## 🧑‍💻 Author
 
 Created with 💜 by Krithika N
 If you love dramas as much as I do, consider giving this project a ⭐!
+
+---
 
 ## 📃 License
 This project is licensed under the MIT License.
