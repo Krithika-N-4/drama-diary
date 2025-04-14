@@ -86,14 +86,10 @@ npm run dev
 The app is live and deployed using Vercel:
 🌐 https://drama-diary.vercel.app/
 
----
-
 ## 🧑‍💻 Author
 
 Created with 💜 by Krithika N
 If you love dramas as much as I do, consider giving this project a ⭐!
-
----
 
 ## 📃 License
 This project is licensed under the MIT License.
