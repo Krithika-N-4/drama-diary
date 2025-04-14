@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎬 Drama Diary
 
-## Getting Started
+**Drama Diary** is a personalized drama journaling web app built for drama enthusiasts! Whether you're into Thai, Korean, or international series — this app lets you track what you're watching, what you've completed, and what’s on your radar. 💜
 
-First, run the development server:
+Live Demo: [Visit on Vercel](https://your-vercel-url.vercel.app)  
+
+---
+
+## 🌟 Features
+
+### 🗂️ Organized Lists
+- **Watchlist** – shows dramas you plan to watch
+- **Currently Watching** – dramas you're currently watching
+- **Completed** – dramas you've finished
+- **Recommended** – curated list of must-watch dramas
+
+### ➕ Add Drama Entries
+- Add title, description, year, language, and status
+- Mark dramas as **favorites** with a ❤️
+- Latest entries appear at the **top**
+
+### 🔍 Powerful Search & Filter
+- Search by:
+  - Drama title
+  - Language
+  - Year
+  - Favorite (type `❤`)
+- Combine filters (e.g., favorites from 2023 in Korean)
+
+### 🌗 Light/Dark Mode
+- Smooth toggle for light and dark themes
+
+### 💾 Persistent Data
+- Data is saved in the browser using **Local Storage**
+- No account needed — your journal is right where you left it
+
+---
+
+## 🧠 Special Features
+
+- ✅ Show only **Favorite dramas**
+- ✅ Filter by **Language**, **Year**, or **both**
+- ✅ Combine with **Favorite + Language**, **Year + Favorite**, or **all 3**
+- ✅ Recommended list for inspiration
+- ✅ All filters and search are accessible right from the top of the page
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Krithika-N-4/drama-diary.git
+cd drama-diary
+
+```
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠 Built With
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- React
 
-## Learn More
+- Tailwind CSS
 
-To learn more about Next.js, take a look at the following resources:
+- shadcn/ui
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- lucide-react
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📦 Deployment
 
-## Deploy on Vercel
+The app is live and deployed using Vercel:
+🌐 Drama Diary on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧑‍💻 Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Created with 💜 by Krithika N
+If you love dramas as much as I do, consider giving this project a ⭐!
+
+## 📃 License
+This project is licensed under the MIT License.
+
+```bash
+Let me know if you want to add badges (e.g. for Next.js, Vercel, MIT license), screenshots, or a short walkthrough/GIF demo section too!
+```
+
+
+
