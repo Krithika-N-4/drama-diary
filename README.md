@@ -82,7 +82,7 @@ npm run dev
 ## 📦 Deployment
 
 The app is live and deployed using Vercel:
-🌐 Drama Diary on Vercel
+🌐 https://drama-diary.vercel.app/
 
 ## 🧑‍💻 Author
 
