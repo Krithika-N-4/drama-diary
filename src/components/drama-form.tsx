@@ -98,6 +98,7 @@ const DramaForm: React.FC<DramaFormProps> = ({
             <SelectItem value="Thai">Thai</SelectItem>
             <SelectItem value="Japanese">Japanese</SelectItem>
             <SelectItem value="Chinese">Chinese</SelectItem>
+            <SelectItem value="Taiwanese">Taiwanese</SelectItem>
             <SelectItem value="English">English</SelectItem>
             <SelectItem value="Spanish">Spanish</SelectItem>
             <SelectItem value="Other">Other</SelectItem>
