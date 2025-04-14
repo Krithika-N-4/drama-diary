@@ -2,7 +2,7 @@
 
 **Drama Diary** is a personalized drama journaling web app built for drama enthusiasts! Whether you're into Thai, Korean, or international series — this app lets you track what you're watching, what you've completed, and what’s on your radar. 💜
 
-Live Demo: [Visit on Vercel](https://your-vercel-url.vercel.app)  
+Live Demo: [Visit on Vercel](https://drama-diary.vercel.app/)  
 
 ---
 
