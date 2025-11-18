@@ -58,7 +58,7 @@ interface Drama {
               statusColor = 'border-blue-500';
             } else if (drama.status === 'Completed') {
               statusColor = 'border-green-500';
-            } else if (drama.status === 'Recommended') {
+            } else if (drama.status === 'On-Hold') {
               statusColor = 'border-yellow-500';
             }
   
@@ -351,7 +351,7 @@ export default function Home() {
   const filteredWatchlist = filteredDramas.filter(drama => drama.status === 'Watchlist');
   const filteredWatching = filteredDramas.filter(drama => drama.status === 'Watching');
   const filteredCompleted = filteredDramas.filter(drama => drama.status === 'Completed');
-  const filteredRecommended = filteredDramas.filter(drama => drama.status === 'Recommended');
+  const filteredRecommended = filteredDramas.filter(drama => drama.status === 'On-Hold');
 
   const noDramasFound = filteredDramas.length === 0;
   
@@ -514,9 +514,9 @@ return (
             Completed ({filteredCompleted.length})
           </button>
           <button
-            onClick={() => setActiveTab("recommended")}
+            onClick={() => setActiveTab("on-hold")}
             className={`py-2.5 px-2 rounded-md text-sm font-medium shadow-sm text-center ${
-              activeTab === "recommended" 
+              activeTab === "on-hold" 
                 ? "bg-primary text-primary-foreground" 
                 : "bg-secondary text-secondary-foreground"
             }`}
@@ -536,7 +536,7 @@ return (
           {activeTab === "completed" && (
             <DramaList dramas={filteredCompleted} onDelete={deleteDrama} onEdit={handleEdit} />
           )}
-          {activeTab === "recommended" && (
+          {activeTab === "on-hold" && (
             <DramaList dramas={filteredRecommended} onDelete={deleteDrama} onEdit={handleEdit} />
           )}
         </div>
