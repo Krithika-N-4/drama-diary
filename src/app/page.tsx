@@ -351,7 +351,7 @@ export default function Home() {
   const filteredWatchlist = filteredDramas.filter(drama => drama.status === 'Watchlist');
   const filteredWatching = filteredDramas.filter(drama => drama.status === 'Watching');
   const filteredCompleted = filteredDramas.filter(drama => drama.status === 'Completed');
-  const filteredRecommended = filteredDramas.filter(drama => drama.status === 'On-Hold');
+  const filteredOnHold = filteredDramas.filter(drama => drama.status === 'On-Hold');
 
   const noDramasFound = filteredDramas.length === 0;
   
@@ -521,7 +521,7 @@ return (
                 : "bg-secondary text-secondary-foreground"
             }`}
           >
-            Rec. ({filteredRecommended.length})
+            On-Hold ({filteredOnHold.length})
           </button>
         </div>
         
@@ -537,7 +537,7 @@ return (
             <DramaList dramas={filteredCompleted} onDelete={deleteDrama} onEdit={handleEdit} />
           )}
           {activeTab === "on-hold" && (
-            <DramaList dramas={filteredRecommended} onDelete={deleteDrama} onEdit={handleEdit} />
+            <DramaList dramas={filteredOnHold} onDelete={deleteDrama} onEdit={handleEdit} />
           )}
         </div>
       </div>
