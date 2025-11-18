@@ -128,7 +128,7 @@ const DramaForm: React.FC<DramaFormProps> = ({
             <SelectItem value="Watchlist">Watchlist</SelectItem>
             <SelectItem value="Watching">Watching</SelectItem>
             <SelectItem value="Completed">Completed</SelectItem>
-            <SelectItem value="Recommended">Recommended</SelectItem>
+            <SelectItem value="On-Hold">On-Hold</SelectItem>
           </SelectContent>
         </Select>
       </div>
